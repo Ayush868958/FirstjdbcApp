@@ -21,8 +21,15 @@ public class LaunchApp1 {
        // creating statement
         Statement statement=connect.createStatement();
         // execute query
-        Statement.executeUpdate
+        String sql="INSERT INTO student_info(sid,sname,scity)VALUES(24,'Ayush','Guna')";
+        int rowAffected=statement.executeUpdate(sql);
         //process  the result
+        if(rowAffected==0){
+            System.out.println("Unable to insert student");
+        }
+        else{
+            System.out.println("Successfully inserted student");
+        }
         //close the resources
         statement.close();
         connect.close();
