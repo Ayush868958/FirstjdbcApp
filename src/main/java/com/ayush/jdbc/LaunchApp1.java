@@ -21,7 +21,7 @@ public class LaunchApp1 {
        // creating statement
         Statement statement=connect.createStatement();
         // execute query
-        String sql="INSERT INTO student_info(sid,sname,scity)VALUES(25,'Raj','Bihar')";
+        String sql="INSERT INTO student_info(sid,sname,scity)VALUES(30,'Ritu','MP')";
        // String sql ="INSERT INTO student_info(sid,sname,scity)VALUES(24,'Ayush','Guna')";
         int rowAffected=statement.executeUpdate(sql);
         //process  the result
