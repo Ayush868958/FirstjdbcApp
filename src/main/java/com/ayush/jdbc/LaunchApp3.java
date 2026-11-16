@@ -23,9 +23,9 @@ public class LaunchApp3{
         // creating statement
         Statement statement = connect.createStatement();
         //execute query
-        String sql="SELECT *FROM student_info";
+        String sql="SELECT * from student_info";
         ResultSet rs=statement.executeQuery(sql);
-
+    //boolean status=statement.execute (sql);
   // process the result
         while(rs.next()){
          //int sid=  rs.getInt(1);
