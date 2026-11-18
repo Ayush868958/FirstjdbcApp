@@ -20,7 +20,7 @@ public class LaunchApp4 {
                  Statement statement = connect.createStatement()) {
 
                 String sql = "INSERT INTO student_info(sid, sname, scity) " +
-                        "VALUES(24, 'Ayush', 'Guna')";
+                        "VALUES(24, 'Ayush', 'Bhopal')";
 
                 int rowAffected = statement.executeUpdate(sql);
 
