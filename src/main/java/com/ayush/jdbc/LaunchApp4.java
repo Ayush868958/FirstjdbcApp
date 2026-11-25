@@ -6,13 +6,13 @@ import java.sql.*;
 public class LaunchApp4 {
 
     public static void main(String[] args) {
-      //  Connection connect=null;
+
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             String url = "jdbc:mysql://localhost:3306/jdbclearning";
             String username = "root";
-            String password = "YOUR_PASSWORD";
+            String password = "Ayush1790@@##";
 
             try (Connection connect =
                          DriverManager.getConnection(url, username, password);
@@ -20,7 +20,7 @@ public class LaunchApp4 {
                  Statement statement = connect.createStatement()) {
 
                 String sql = "INSERT INTO student_info(sid, sname, scity) " +
-                        "VALUES(24, 'Ayush', 'guna')";
+                        "VALUES(62, 'Ayush', 'gwalior')";
 
                 int rowAffected = statement.executeUpdate(sql);
 
@@ -37,13 +37,7 @@ public class LaunchApp4 {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        catch(Exception e){
-            e.printStackTrace();
-        }
-        finally{
-            statement.close();
-            connect.close();
-        }
     }
 }
+
 
